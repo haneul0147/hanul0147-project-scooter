@@ -1,0 +1,34 @@
+org: sky0147
+app: hanul0147-test
+console: true
+service: hanul0147-test
+
+frameworkVersion: '3'
+
+custom:
+  wsgi:
+    app: app.app
+
+provider:
+  name: aws
+  runtime: python3.8
+  apiGateway:
+    binaryMediaTypes:
+      - 'image/png'
+      - 'image/jpeg'
+      - 'multipart/form-data'
+
+functions:
+  api:
+    handler: wsgi_handler.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
