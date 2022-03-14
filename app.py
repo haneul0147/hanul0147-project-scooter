@@ -30,7 +30,7 @@ api = Api(app)
 
 # 경로와 리소스를 연결한다.
 api.add_resource(UserRegisterResource, '/api/v1/user/register')
-api.add_resource(UserLoginResource, '/api/v1/user/login')
+api.add_resource(UserLoginResource, '/dev/api/v1/user/login')
 api.add_resource(UserLogoutResource, '/api/v1/user/logout')
 api.add_resource(LabelResource,'/api/v1/labling')
 api.add_resource(FileUpload,'/api/v1/posting')
