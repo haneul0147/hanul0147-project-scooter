@@ -6,6 +6,8 @@
   "devDependencies": {
     "serverless-python-requirements": "^5.1.0",
     "serverless-wsgi": "^1.7.6"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.1"
   }
-
 }
