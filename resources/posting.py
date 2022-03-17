@@ -73,7 +73,7 @@ class FileUpload(Resource):
                      aws_access_key_id = Config.ACCESS_KEY,
                         aws_secret_access_key = Config.SECRET_ACCESS )
 
-        response = client.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':app.config['S3_LOCATION']+file.filename}},
+        response = client.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':photo}},
         MaxLabels=10)
 
         print(response['Labels'])
