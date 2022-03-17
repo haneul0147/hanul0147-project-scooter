@@ -64,7 +64,6 @@ class FileUpload(Resource):
             except Exception as e :
                 return {'error' : str(e)}
         
-    
 
         bucket=Config.S3_BUCKET # Cofig에 들어있는 버킷
         
@@ -73,7 +72,7 @@ class FileUpload(Resource):
                      aws_access_key_id = Config.ACCESS_KEY,
                         aws_secret_access_key = Config.SECRET_ACCESS )
 
-        response = client.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':photo}},
+        response = client.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':app.config['S3_LOCATION']+file.filename}},
         MaxLabels=10)
 
         print(response['Labels'])
@@ -84,10 +83,9 @@ class FileUpload(Resource):
             label_dict['Name'] = label['Name']
             label_dict['Confidence']=label['Confidence']
             result.append(label_dict)
-
+        
         return {'result':result}
-           
-
+       
 
 api.add_resource(FileUpload,'/data')
 
