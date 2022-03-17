@@ -173,7 +173,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/hanul0147-test/dev/1646354602505-2022-03-04T00:43:22.505Z/hanul0147-test.zip"
+          "S3Key": "serverless/hanul0147-test/dev/1647486235989-2022-03-17T03:03:55.989Z/hanul0147-test.zip"
         },
         "Handler": "wsgi_handler.handler",
         "Runtime": "python3.8",
@@ -328,7 +328,7 @@
         "ApiLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1646354594619": {
+    "ApiGatewayDeployment1647486227392": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
