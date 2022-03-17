@@ -180,9 +180,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/hanul0147-test/dev/code-artifacts/sls-otel.0.1.6.zip"
+                "S3Key": "serverless/hanul0147-test/dev/code-artifacts/sls-otel.0.1.11.zip"
               },
-              "LayerName": "sls-console-otel-extension-0-1-6"
+              "LayerName": "sls-console-otel-extension-0-1-11"
             }
           },
           "ApiLambdaFunction": {
@@ -192,7 +192,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/hanul0147-test/dev/1647486235989-2022-03-17T03:03:55.989Z/hanul0147-test.zip"
+                "S3Key": "serverless/hanul0147-test/dev/1647507563932-2022-03-17T08:59:23.932Z/hanul0147-test.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.8",
@@ -210,14 +210,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersion55B9Rly5gaHOabwKp5ImXgX9SlsB114bthxVQFjNRI": {
+          "ApiLambdaVersionVwz5NaNLxfPSh6ALXStiE2Pe7xSWgg9LlBB9iEflPM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "+HBrhhvbHS1VMmQNqPSL5cKenlyHnslZd7qGwXJ6BAU="
+              "CodeSha256": "B2DVfeUwI9tsStfJPYubsly0/uXt5Q73UDA25PDnWxQ="
             }
           },
           "ApiGatewayRestApi": {
@@ -347,7 +347,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1647486227392": {
+          "ApiGatewayDeployment1647507554316": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -410,7 +410,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersion55B9Rly5gaHOabwKp5ImXgX9SlsB114bthxVQFjNRI"
+              "Ref": "ApiLambdaVersionVwz5NaNLxfPSh6ALXStiE2Pe7xSWgg9LlBB9iEflPM"
             },
             "Export": {
               "Name": "sls-hanul0147-test-dev-ApiLambdaFunctionQualifiedArn"
@@ -563,7 +563,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersion55B9Rly5gaHOabwKp5ImXgX9SlsB114bthxVQFjNRI"
+        "versionLogicalId": "ApiLambdaVersionVwz5NaNLxfPSh6ALXStiE2Pe7xSWgg9LlBB9iEflPM"
       }
     },
     "configValidationMode": "warn",
@@ -593,13 +593,13 @@
     "artifact": "C:\\Users\\5-11\\Documents\\GitHub\\hanul0147-test\\.serverless\\hanul0147-test.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/hanul0147-test/dev/1647486235989-2022-03-17T03:03:55.989Z",
+    "artifactDirectoryName": "serverless/hanul0147-test/dev/1647507563932-2022-03-17T08:59:23.932Z",
     "artifact": "hanul0147-test.zip"
   },
   "console": {
     "schemaVersion": "1",
     "otelIngestionToken": "2a1d8841-9028-4fff-af87-baf910eb5503",
-    "extensionLayerVersionPostfix": "0.1.6",
+    "extensionLayerVersionPostfix": "0.1.11",
     "service": "hanul0147-test",
     "stage": "dev",
     "orgId": "e7c07ece-face-462a-8e99-8290308687a3"
