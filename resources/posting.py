@@ -27,8 +27,6 @@ app.config.from_object(Config)
 class FileUpload(Resource):
     def post(self):
         
-        bucket=Config.S3_BUCKET # Cofig에 들어있는 버킷
-    
         # 사진과 텍스트 데이터를 다 받을 수 있다.
 
         # form-data의 text형식에서 데이터 가져오는 경우
@@ -65,27 +63,8 @@ class FileUpload(Resource):
                                 )
             except Exception as e :
                 return {'error' : str(e)}
-
         
-        # 'us-east-1' => 내 S3의 리전
-        client=boto3.client('rekognition','us-east-1' ,
-                     aws_access_key_id = Config.ACCESS_KEY,
-                        aws_secret_access_key = Config.SECRET_ACCESS )
-
-        response = client.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':photo}},
-        MaxLabels=10)
-
-        print(response['Labels'])
-
-        result = []
-        for label in response['Labels']:
-            label_dict = {}
-            label_dict['Name'] = label['Name']
-            label_dict['Confidence']=label['Confidence']
-            result.append(label_dict)
-
-        return {'result':result}
-               
+        return {'result' : app.config['S3_LOCATION']+file.filename}       
 
 
 api.add_resource(FileUpload,'/data')
