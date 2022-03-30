@@ -9,7 +9,7 @@ from flask_jwt_extended import JWTManager
 from resources.rekognition import LabelResource
 from resources.posting import FileUpload
 
-from resources.user import UserLoginResource, UserLogoutResource, UserRegisterResource, jwt_blacklist
+from resources.user import UserInfoResource, UserLoginResource, UserLogoutResource, UserRegisterResource, jwt_blacklist
 
 
 app = Flask(__name__)
@@ -32,6 +32,7 @@ api = Api(app)
 api.add_resource(UserRegisterResource, '/api/v1/user/register')
 api.add_resource(UserLoginResource, '/api/v1/user/login')
 api.add_resource(UserLogoutResource, '/api/v1/user/logout')
+api.add_resource(UserInfoResource, '/api/v1/user/me')
 api.add_resource(LabelResource,'/api/v1/labling')
 api.add_resource(FileUpload,'/api/v1/posting')
 
