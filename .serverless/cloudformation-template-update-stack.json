@@ -173,7 +173,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/hanul0147-test/dev/1648543719889-2022-03-29T08:48:39.889Z/hanul0147-test.zip"
+          "S3Key": "serverless/hanul0147-test/dev/1648688212102-2022-03-31T00:56:52.102Z/hanul0147-test.zip"
         },
         "Handler": "wsgi_handler.handler",
         "Runtime": "python3.8",
@@ -191,14 +191,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersion8Xrhk6VsDIRoyFlASQSj90XCZCEkCE2hxO62TA8c": {
+    "ApiLambdaVersionkbPqFBjwTkAvfMkmVmudDTpPnAl4GpsBZkfeLGyr8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "iqGWkKei9fk6z79G5Gquf5ahaMYmR9i85+xYuT1payM="
+        "CodeSha256": "tvc7ChWHTgcQ9AFOxLxCNpd1aNW81ib5/qA8Td1o3Dw="
       }
     },
     "ApiGatewayRestApi": {
@@ -328,7 +328,7 @@
         "ApiLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1648543710214": {
+    "ApiGatewayDeployment1648688201048": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -391,7 +391,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersion8Xrhk6VsDIRoyFlASQSj90XCZCEkCE2hxO62TA8c"
+        "Ref": "ApiLambdaVersionkbPqFBjwTkAvfMkmVmudDTpPnAl4GpsBZkfeLGyr8"
       },
       "Export": {
         "Name": "sls-hanul0147-test-dev-ApiLambdaFunctionQualifiedArn"
