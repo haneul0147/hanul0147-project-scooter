@@ -33,7 +33,6 @@ api.add_resource(UserRegisterResource, '/api/v1/user/register')
 api.add_resource(UserLoginResource, '/api/v1/user/login')
 api.add_resource(UserLogoutResource, '/api/v1/user/logout')
 api.add_resource(UserInfoResource, '/api/v1/user/me')
-
 api.add_resource(FileUpload,'/api/v1/posting')
 
 
