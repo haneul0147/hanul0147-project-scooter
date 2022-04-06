@@ -151,7 +151,7 @@ class FileUpload(Resource):
                 if lastresult in record:
                     print("if 비교문 스쿠터 ")
                     lastresult=PaPago(lastresult)
-                    answer="주차하는 곳에 있으면 안되는 물체인\'"+ lastresult +"\'(이)가 있어요!!! "
+                    answer="주차하는 곳에 있으면 안되는 물체인 \'"+ lastresult +"\' (이)가 있어요!!! "
                     Number = 200
                     break
                     

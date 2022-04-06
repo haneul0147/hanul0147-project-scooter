@@ -192,7 +192,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/hanul0147-test/dev/1648688212102-2022-03-31T00:56:52.102Z/hanul0147-test.zip"
+                "S3Key": "serverless/hanul0147-test/dev/1649126403484-2022-04-05T02:40:03.484Z/hanul0147-test.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.8",
@@ -210,14 +210,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionkbPqFBjwTkAvfMkmVmudDTpPnAl4GpsBZkfeLGyr8": {
+          "ApiLambdaVersionVUXKQitYq3Ayb3nJDvU4Z8zXbdzMBE0bd2J7k0jTQxo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "tvc7ChWHTgcQ9AFOxLxCNpd1aNW81ib5/qA8Td1o3Dw="
+              "CodeSha256": "EtCr+3Sbaj2tZgoCzbW2J5xb538w5u+8g9K0eY7D7Q8="
             }
           },
           "ApiGatewayRestApi": {
@@ -347,7 +347,7 @@
               "ApiLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1648688201048": {
+          "ApiGatewayDeployment1649126393789": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -410,7 +410,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionkbPqFBjwTkAvfMkmVmudDTpPnAl4GpsBZkfeLGyr8"
+              "Ref": "ApiLambdaVersionVUXKQitYq3Ayb3nJDvU4Z8zXbdzMBE0bd2J7k0jTQxo"
             },
             "Export": {
               "Name": "sls-hanul0147-test-dev-ApiLambdaFunctionQualifiedArn"
@@ -563,7 +563,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionkbPqFBjwTkAvfMkmVmudDTpPnAl4GpsBZkfeLGyr8"
+        "versionLogicalId": "ApiLambdaVersionVUXKQitYq3Ayb3nJDvU4Z8zXbdzMBE0bd2J7k0jTQxo"
       }
     },
     "configValidationMode": "warn",
@@ -593,7 +593,7 @@
     "artifact": "C:\\Users\\5-11\\Documents\\GitHub\\hanul0147-test\\.serverless\\hanul0147-test.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/hanul0147-test/dev/1648688212102-2022-03-31T00:56:52.102Z",
+    "artifactDirectoryName": "serverless/hanul0147-test/dev/1649126403484-2022-04-05T02:40:03.484Z",
     "artifact": "hanul0147-test.zip"
   },
   "console": {

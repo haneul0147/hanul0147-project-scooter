@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+#올라가면 안되는 애들
+mysql_connection.py
+config.py
+utils.py
+
 
 # C extensions
 *.so

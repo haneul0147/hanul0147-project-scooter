@@ -1,12 +1,13 @@
 import json
 import os
 import sys
+from config import Config
 import urllib.request
 
 def PaPago(names):
-    client_id = "yXy8TnGociszhVoAosXY" # 개발자센터에서 발급받은 Client ID 값
-    client_secret = "FjZIhhpIeN" # 개발자센터에서 발급받은 Client Secret 값
-    
+    client_id = Config.client_id
+    client_secret= Config.client_secret 
+  
     encText = urllib.parse.quote(names)
     data = "source=en&target=ko&text=" + encText
     url = "https://openapi.naver.com/v1/papago/n2mt"
