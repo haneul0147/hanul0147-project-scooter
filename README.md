@@ -2,6 +2,7 @@
 
 구글 API 을 이용하여 맵을 구현하였습니다. 
 
+현재 소스코드에는 mysql_connection.py / config.py / utils.py 가 비공개로 설정되어 있습니다. 
 
 
 ![image](https://user-images.githubusercontent.com/96038759/161693128-1a78cd5f-55e3-4acf-99b8-a427ccaa3d43.png)
