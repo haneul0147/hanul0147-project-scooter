@@ -5,7 +5,10 @@
 현재 소스코드에는 mysql_connection.py / config.py / utils.py 가 비공개로 설정되어 있습니다. 
 
 
-Flask 를 사용하였습니다.
+Flask 를 이용하여 개발하였습니다.
+
+
+
 ![image](https://user-images.githubusercontent.com/96038759/165874636-cd5f0f9f-8910-4624-9d90-e85c38d651ee.png)
 
 
