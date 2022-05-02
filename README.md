@@ -6,6 +6,9 @@
 https://docs.google.com/presentation/d/1TN8_2hYOJVgSGjVKvwylT6hvXKvedM_cZAuG3YRpwmY/edit#slide=id.p3
 
 
+![image](https://user-images.githubusercontent.com/96038759/166189956-a4a44dee-5a93-4296-99ff-9dcee955d671.png)
+
+
 아래 링크는  유튜브 영상 를 입니다. 앱 실행 영상을 확인하실 수 있습니다.
 
 
