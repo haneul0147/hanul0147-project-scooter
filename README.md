@@ -12,6 +12,10 @@ https://docs.google.com/presentation/d/1TN8_2hYOJVgSGjVKvwylT6hvXKvedM_cZAuG3YRp
 https://www.youtube.com/watch?v=3sXpyZ_wHkY 
 
 
+![image](https://user-images.githubusercontent.com/96038759/166189882-baf0b082-74bc-4f1e-99b4-58e6a3e516ae.png)
+
+
+
 현재 소스코드에는 mysql_connection.py / config.py / utils.py 가 비공개로 설정되어 있습니다. 
 
 
