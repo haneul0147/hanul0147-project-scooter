@@ -2,6 +2,16 @@
 
 구글 API 을 이용하여 맵을 구현하였습니다. 
 
+아래 링크는 프로젝트 소개 ppt  입니다. 
+https://docs.google.com/presentation/d/1TN8_2hYOJVgSGjVKvwylT6hvXKvedM_cZAuG3YRpwmY/edit#slide=id.p3
+
+
+아래 링크는  유튜브 영상 를 입니다. 앱 실행 영상을 확인하실 수 있습니다.
+
+
+https://www.youtube.com/watch?v=3sXpyZ_wHkY 
+
+
 현재 소스코드에는 mysql_connection.py / config.py / utils.py 가 비공개로 설정되어 있습니다. 
 
 
@@ -23,12 +33,5 @@ Flask 를 이용하여 개발하였습니다.
 
 
 
-아래 링크는 프로젝트 ppt 를 입니다. 
-https://docs.google.com/presentation/d/1TN8_2hYOJVgSGjVKvwylT6hvXKvedM_cZAuG3YRpwmY/edit#slide=id.p3
 
-
-아래 링크는  유튜브 영상 를 입니다. 앱 실행 영상을 확인하실 수 있습니다.
-
-
-https://www.youtube.com/watch?v=3sXpyZ_wHkY 
 
